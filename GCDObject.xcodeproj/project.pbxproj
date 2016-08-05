@@ -15,6 +15,9 @@
 		3EC398301D50BDBB00A17A1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC3982E1D50BDBB00A17A1E /* LaunchScreen.storyboard */; };
 		3EC3983B1D50BDBB00A17A1E /* GCDObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC3983A1D50BDBB00A17A1E /* GCDObjectTests.m */; };
 		3EC398461D50BDBB00A17A1E /* GCDObjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC398451D50BDBB00A17A1E /* GCDObjectUITests.m */; };
+		3EC398591D50BDD600A17A1E /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC398541D50BDD600A17A1E /* GCDGroup.m */; };
+		3EC3985A1D50BDD600A17A1E /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC398561D50BDD600A17A1E /* GCDQueue.m */; };
+		3EC3985B1D50BDD600A17A1E /* GCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC398581D50BDD600A17A1E /* GCDSemaphore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E898E021D51810000F3226E /* WQmacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WQmacro.h; sourceTree = "<group>"; };
 		3EC3981D1D50BDBB00A17A1E /* GCDObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC398211D50BDBB00A17A1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3EC398231D50BDBB00A17A1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,12 @@
 		3EC398411D50BDBB00A17A1E /* GCDObjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCDObjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC398451D50BDBB00A17A1E /* GCDObjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDObjectUITests.m; sourceTree = "<group>"; };
 		3EC398471D50BDBB00A17A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EC398531D50BDD600A17A1E /* GCDGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDGroup.h; sourceTree = "<group>"; };
+		3EC398541D50BDD600A17A1E /* GCDGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDGroup.m; sourceTree = "<group>"; };
+		3EC398551D50BDD600A17A1E /* GCDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDQueue.h; sourceTree = "<group>"; };
+		3EC398561D50BDD600A17A1E /* GCDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDQueue.m; sourceTree = "<group>"; };
+		3EC398571D50BDD600A17A1E /* GCDSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSemaphore.h; sourceTree = "<group>"; };
+		3EC398581D50BDD600A17A1E /* GCDSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSemaphore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,13 @@
 			children = (
 				3EC398231D50BDBB00A17A1E /* AppDelegate.h */,
 				3EC398241D50BDBB00A17A1E /* AppDelegate.m */,
+				3E898E021D51810000F3226E /* WQmacro.h */,
+				3EC398531D50BDD600A17A1E /* GCDGroup.h */,
+				3EC398541D50BDD600A17A1E /* GCDGroup.m */,
+				3EC398551D50BDD600A17A1E /* GCDQueue.h */,
+				3EC398561D50BDD600A17A1E /* GCDQueue.m */,
+				3EC398571D50BDD600A17A1E /* GCDSemaphore.h */,
+				3EC398581D50BDD600A17A1E /* GCDSemaphore.m */,
 				3EC398261D50BDBB00A17A1E /* ViewController.h */,
 				3EC398271D50BDBB00A17A1E /* ViewController.m */,
 				3EC398291D50BDBB00A17A1E /* Main.storyboard */,
@@ -270,9 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EC398591D50BDD600A17A1E /* GCDGroup.m in Sources */,
 				3EC398281D50BDBB00A17A1E /* ViewController.m in Sources */,
 				3EC398251D50BDBB00A17A1E /* AppDelegate.m in Sources */,
 				3EC398221D50BDBB00A17A1E /* main.m in Sources */,
+				3EC3985A1D50BDD600A17A1E /* GCDQueue.m in Sources */,
+				3EC3985B1D50BDD600A17A1E /* GCDSemaphore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +518,7 @@
 				3EC3984C1D50BDBB00A17A1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EC3984D1D50BDBB00A17A1E /* Build configuration list for PBXNativeTarget "GCDObjectTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +527,7 @@
 				3EC3984F1D50BDBB00A17A1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EC398501D50BDBB00A17A1E /* Build configuration list for PBXNativeTarget "GCDObjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +536,7 @@
 				3EC398521D50BDBB00A17A1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
